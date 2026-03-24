@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>BODMAS Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <title>BODMAS Interactive Game</title>
 
+    <!-- ADD THIS LINE -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
 <body>
 
-    <h1>BODMAS Game</h1>
+    <h1>BODMAS Interactive Learning Game</h1>
 
-    <p id="question">5 + 3 × 2 = ?</p>
+    <h2 id="expression">5 + 3 × 2</h2>
 
-    <div>
-        <button onclick="checkAnswer(16)">16</button>
-        <button onclick="checkAnswer(11)">11</button>
-        <button onclick="checkAnswer(13)">13</button>
+    <p id="instruction">👉 Click the operation to solve first:</p>
+
+    <div id="options">
+        <button onclick="choose('add')">5 + 3</button>
+        <button onclick="choose('multiply')">3 × 2</button>
     </div>
 
-    <p id="result"></p>
+    <h3 id="feedback"></h3>
 
     <script src="script.js"></script>
 
